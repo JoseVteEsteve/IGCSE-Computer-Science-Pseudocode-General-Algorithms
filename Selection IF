@@ -1,0 +1,56 @@
+//selection is one of the most used control structures in programming
+//one formal way to use selection is by using IF statements, that can be:
+//  - simple IF...THEN...ENDIF
+//  - simple IF...THEN...ELSE...ENDIF
+//  - nested IFs --> IF...THEN...ELSE...IF...THEN...ELSE...ENDIF...ENDIF
+
+//simple IF...THEN...ENDIF statements are used when only the True result is necessary in the program.
+//the structure is
+
+IF condition
+  THEN
+    true_result
+ENDIF
+
+//simple IF...THEN...ELSE...ENDIF statements are used when the True result and the False result are needed by the programmer
+//the structure is
+
+IF condition
+  THEN
+    true_result
+  ELSE
+    false_result
+ENDIF
+
+//nested IFs are used when there are more than one condition that must be avaluated into the program
+//the structure is
+
+IF condition1
+  THEN
+    true_result_1
+  ELSE
+    IF condition_2
+      THEN
+        true_result_2
+      ELSE
+        false_result
+    ENDIF
+ENDIF
+
+//a special case can be used when two or more simple IF...THEN...ELSE...ENDIF structures are performed in sequence
+//the difference with nested IFs is that the second condition will be evaluated independently of the first condition
+
+IF condition1
+  THEN
+    true_result1
+  ELSE
+    false_result1
+ENDIF
+//the first if statement has been ended
+//the second if statement begins now, but does not depend on the result of the previous IF
+IF condition_2
+  THEN
+    true_result2
+  ELSE
+    false_result2
+    
