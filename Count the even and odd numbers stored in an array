@@ -1,0 +1,35 @@
+//in this pseudocode algorithm, an array of N positive whole numbers is suposed to be filled in
+
+//this technique implies to traverse the array, calculate the modulus (remainder) of each number with the divisor 2 and:
+//  - in case the remainder is 0, the number will be even so the EvenCounter will be updated
+//  - in case the remainder is 1, the number will be odd so the OddCounter will be updated
+
+//to traverse the array, a FOR loop will be used
+
+//at the very beginning, two counters called OddCounter and EvenCounter will be initialised as 0
+
+OddCounter <-- 0
+EvenCounter <-- 0
+
+//also, an array of N numbers will be declared (we supose that the array is called Numbers)
+
+Numbers [1:N]
+
+//the FOR loop will be used to traverse the array and inside the FOR loop, an IF-ELSE statement will be used to know if the number is 
+//even or odd
+
+FOR Counter <-- 1 TO N
+  IF Numbers[Count] MOD 2 = 0
+    THEN
+      EvenCounter <-- EvenCounter + 1
+    ELSE
+      OddCounter <-- OddCounter + 1
+   ENDIF
+NEXT Count
+ENDFOR
+
+//at least, the counter of even and odd numbers must be printed out
+PRINT("There are",EvenCount,"even numbers in the array")
+PRINT("There are",OddCount,"odd numbers in the array")
+
+//the program ends ;)
