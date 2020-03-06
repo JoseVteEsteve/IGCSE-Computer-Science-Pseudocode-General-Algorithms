@@ -1,0 +1,31 @@
+//two or more arrays can be used at the same time and the most important issue is that the size of each array must be the same
+//is possible to declare two or more arrays with the same size and the variable Count will be used to access an element of each array
+
+//supose two arrays called Array1 and Array2 of the same size (the last element is N)
+Array1 [1:N]
+Array2 [1:N]
+
+//accessing elements of the same index m
+PRINT Array1[m], Array2[m]
+
+//entering data in two elements of the same index of different arrays consecutively
+INPUT Data1
+INPUT Data2
+Array1[m] <-- Data1
+Array2[m] <-- Data2
+
+//traversing the arrays at the same time
+FOR Count <-- 1 TO N
+  PRINT Array1[Count], Array2[Count]
+NEXT Count
+ENDFOR
+
+//entering data in two arrays consecutively
+FOR Count <-- 1 TO N
+  INPUT Data1
+  INPUT Data2
+  Array1[Count] <-- Data1
+  Array2[Count] <-- Data2
+NEXT Count
+ENDFOR
+
