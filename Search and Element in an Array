@@ -1,0 +1,23 @@
+//declaration of the array
+ArrayName [1:N]
+//where:
+//    - ArrayName must be a meaningful name, such as Students, Names, Numbers, StudentMarks, ...
+//    - N means the last index of the array
+//    - 1:N means that the array contains N elements indexed from 1 to N
+
+//the array is supossed to be filled in with some data
+
+//the user must enter the data to be searched in the array
+INPUT SearchedItem
+
+//a for loop is used to traverse the array and to know if the item to be searched (SearchedItem) is stored in the array
+//in case the element has been encountered, the program will output the index (position) in which the array stores the item searched
+
+FOR Count <-- 1 TO N
+  IF ArrayName[Count] = SearchedItem
+    THEN
+      PRINT("The item has been found at index location",Count)
+NEXT Count
+ENDFOR
+
+//the program ends
