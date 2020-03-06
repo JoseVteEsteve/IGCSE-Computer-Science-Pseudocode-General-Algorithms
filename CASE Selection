@@ -1,0 +1,26 @@
+//CASE structure is a selection structure like IF statements that is normally used when there are more than three different conditions to
+//be evaluated
+//is used instead on IF statements to save time and paper when writing IF, ELSE, THEN, ENDIF, ...
+//the structure is easier than IF statements
+
+//the structure is the following (and depends on a condition)
+
+CASE Variable OF
+  Value1 : Result1
+  Value2 : Result2
+  ....
+  ....
+  ....
+  ValueN : ResultN
+  OTHERWHILE ResultM
+ENDCASE
+
+//the following example will illustrate this structure
+CASE Mark OF
+  >9 : "A*"
+  >8 : "A"
+  >7 : "B"
+  >6 : "C"
+  OTHERWHISE "U"
+ENDCASE
+
