@@ -1,0 +1,57 @@
+//iteration can be done using three different structures, called:
+//  - FOR...TO...NEXT...ENDFOR
+//  - WHILE...DO...ENDWHILE
+//  - REPEAT...UNTIL
+
+//the three structures have the same meaning but, each one have a different structure in Pseudocode
+//all three structures have a common variable called Count (sometimes is called Counter) which has a scope inside the iteration
+//structure (local scope). This means that Count only can be used inside the definition of the loop.
+//however, FOR loops use the statement NEXT Count to indicate that the variable Count is being updated (incremented by 1) whilst WHILE
+//and REPEAT loops use the statement Count <-- Count + 1 to perform the same action. 
+
+//FOR LOOPS
+//FOR loops are used when the programmer knows the number of times a code must be repeated
+
+FOR Count <-- 1 TO N
+  <code to be repeated>
+NEXT Count
+ENDFOR
+
+//WHILE LOOPS
+//WHILE loops are used when the programmer doesn't know the number of times a code must be repeated but, this code should be repeated
+//while a condition is True. For this reason, WHILE loops are called pre-comditional loops.
+
+Flag <-- False
+WHILE Flag = False DO
+  <code to be repeated>
+ENDWHILE
+//this statement creates an infinite loop unless the value of the flag Flag changes from False to True
+
+Number <-- 10
+WHILE Number >= 100 DO
+  PRINT Number
+  Number <-- Number + 1
+ENDWHILE
+//this code will be repeated 0 times because the condition Number >= 100 is not verified
+
+Number <-- 0
+WHILE Number < 10 DO
+  PRINT Number
+  Number <-- Number + 1
+ENDWHILE
+//this code will be repeated 10 times and the output will be: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+//REPEAT LOOPS
+//REPEAT loops are used when the programmer doesn't know the number of times a code must be repeated but, this code should be repeated.
+//the main difference between WHILE and REPEAT loops is that the REPEAT loop contains the condition to be evaluated after the code, so
+//this code will be repeated, at least, one time whilst WHILE loops is possible that doesn't work like in the last examples.
+
+REPEAT
+  INPUT Number
+  Number <-- Number + 1
+  PRINT Number
+UNTIL Number = 10
+//at least, the code in lines 50, 51 and 52 will be executed one time. 
+//depending on the value of Number the code will be repeated more times.
+
+//end of the program (explanation)
