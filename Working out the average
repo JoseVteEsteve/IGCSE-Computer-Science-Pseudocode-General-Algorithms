@@ -1,0 +1,24 @@
+//calculate the average is a must have in IGCSE Computer Science. 
+//you should know how to calculate the total of an amount of numbers
+
+//at the beginning of the program, a variable called Total (or Sum, for example) is initialised as 0
+Total <-- 0
+
+//the FOR loop is used to enter data into the program and add up these data in the same variable called Total. 
+//This is the process called Totalling
+
+//supose that N elements must be added together and there is a variable called Number (for example) that will be used to store temporarily
+//those data that will be added
+
+FOR Count <-- 1 TO N
+  INPUT Number
+  Total <-- Total + Number
+NEXT Count
+ENDFOR
+
+//to calculate the average, the value of Total must be divided into N (the number of elements added)
+
+Average <-- Total/N
+PRINT("The average is",Average)
+
+//end of the program
