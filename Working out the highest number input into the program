@@ -1,0 +1,33 @@
+//one of the common algorithm that a student of IGCSE Computer Science must know is related to the working out the highest number entered
+//into the program
+//the principles of this algorithm are:
+//  - create a variable called Highest and initialise it with a low value
+//  - use a loop to let the user enter some numbers 
+//  - for each number input into the program, this number will be compared with Highest value and, in case the number entered is greater
+//    than Highest, Highest will take this value
+//  - the final value of Highest will be printed out
+
+//Basic example before explaining the algorithm
+//  - program allows the user to enter 5 numbers. Those number will be random, such as 5, 9, -1, 56, 3
+//  - Highest is initialised as -100 (low value)
+//  - the first number enters into the program. Because 5 is greater than Highest (-100), Highest is 5 (temprarily)
+//  - the second number enters into the program. Because 9 is greater than Highest (5), Highest is 9 (temporarily)
+//  - the third number enters into the program. Because -1 is lower than Highest (5), Highest remains 5 (temporarily)
+//  - the fourth number enters into the program. Because 56 is greater than Highest (5), Highest is 56 (temporarily)
+//  - the fifth number enters into the progra. Because 3 is lower than Highest (56), Highest is 56 (final value)
+//  - at least, the highest number Highest is 56
+
+//Algorithm
+Highest <-- -100,000
+FOR Count <-- 1 TO N
+  INPUT Number
+  IF Number > Highest
+    THEN
+      Highest <-- Number
+  ENDIF
+NEXT Count
+ENDFOR
+
+PRINT "The greatest number entered into the program is", Highest
+
+//the program ends ;)
