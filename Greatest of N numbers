@@ -1,0 +1,20 @@
+//this algorithm has the main objective to obtain and print the greatest number of three numbers entered into the program
+//two IF sentences will be used to know what is the greatest number like:
+//  - the first IF sentence will help us to know if the number 1 is the greatest of the three numbers
+//  - the second IF sentence will help us to know if the number 2 or the number 3 is the greatest
+
+INPUT Number1, Number2, Number3
+
+IF Number1 > Number2 AND Number1 > Number3
+  THEN
+    PRINT Number1,"is the greatest number"
+  ELSE
+    IF Number2 > Number3 AND Number2 > Number1
+      THEN
+        PRINT Number2,"is the greatest number"
+      ELSE
+        PRINT Number3,"is the greatest number"
+    ENDIF
+ENDIF
+
+//the program ends
