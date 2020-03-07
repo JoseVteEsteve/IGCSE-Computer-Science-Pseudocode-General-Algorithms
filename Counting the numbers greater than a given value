@@ -1,0 +1,42 @@
+//this algorithm counts the numbers that are greater than a given value
+//this algorithm can be done by:
+//  - let the user inputting data into the program
+//  - traversing an array
+
+//Algorithm 1. The numbers are input into the program
+
+INPUT GivenValue
+Counter <-- 0
+
+FOR Count <-- 1 TO N
+  PRINT "Please, enter a number: "
+  INPUT Number
+  IF Number > GivenValue
+    THEN
+      Counter <-- Counter + 1
+  ENDIF
+NEXT Count
+ENDFOR
+
+PRINT "The amount of numbers greater than",GiveValue,"is:",Counter
+
+//Algorithm 2. Traversing an existing array
+
+Numbers[1:N]
+INPUT GivenValue
+Counter <-- 0
+
+
+FOR Count <-- 1 TO N
+  IF Numbers[Count] > GivenValue
+    THEN
+      Counter <-- Counter + 1
+  ENDIF
+NEXT Count
+ENDFOR
+
+PRINT "The amount of numbers greater than",GivenValue,"is:",Counter
+
+//the program ends
+
+  
