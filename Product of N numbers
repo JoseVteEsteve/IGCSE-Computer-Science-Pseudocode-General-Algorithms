@@ -1,0 +1,18 @@
+//to multiply N numbers together, a variable called Product must be initialised as 1
+//this algorithm is like Totalling but, changing:
+//  - the variable Total initialised as 0 by variable Product initialised as 1
+//  - the addition of Total <-- Total + Number is changed by the product Product <-- Product*Number
+
+//the algorithm has the following structure
+
+Product <-- 1
+FOR Count <-- 1 TO N
+  INPUT Number
+  Product <-- Product*Number
+NEXT Count
+ENDFOR
+
+PRINT Product 
+
+//the program ends
+
