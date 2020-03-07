@@ -1,0 +1,31 @@
+//this algorithm is normally applied when the elements of the array are numbers but, it can also be applied when the elements are characters
+//the algorithm consists in create a variable called Sum (or Total) initialised as 0 at the very beginning of the program
+//then, the array is declared (and we supose that is filled in with some data)
+//after, the array is traversed using a FOR loop to eventually add the items to the variable Sum
+//at least, the sum value is printed out
+
+Sum <-- 0
+Numbers[1:N] //the array contains N numbers
+
+FOR Num <-- 1 TO N
+  Total <-- Total + Numbers[Num]
+NEXT Count
+ENDFOR
+
+PRINT "The total is",Total
+
+//in case of an "addition" of characters, the structure is the same but the difference is that there is no Sum variable
+//at the very beginning, an empty string is initialised
+
+String <-- ""
+Characters[1:N] //the array contains N characters
+
+FOR Char <-- 1 TO N
+  String <-- String + Char
+NEXT Count
+ENDFOR
+
+PRINT "The string formed has been",String
+
+//the program ends ;)
+
